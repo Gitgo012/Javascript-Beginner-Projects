@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: rgb(3, 33, 57);
+    font-family: "Montserrat";
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 h2{
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.container1 h2:first-of-type{
+    color: white;
+}
+.container1 h2:nth-child(2){
+    color: rgb(12, 140, 77);
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    margin-bottom: 35px;
+}
+.container2{
+    position: relative;
+    width: 500px;
+    height: 55px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.container2 img{
+    position: absolute;
+    height: 30px;
+    right: 15px;
+}
+.generatePassword{
+    padding: 10px 20px;
+    background-color: rgb(12, 140, 77);
+    border: none;
+    border-radius: 5px;
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.generatePassword:hover{
+    cursor: pointer;
+    background-color: rgb(10, 97, 53);
+    color:  rgba(255,255,255,1);;
+}
+.generatePassword img{
+    height: 30px;
+    margin-right: 10px;
+    fill:  rgba(255,255,255,0.7);
+}
+.container2 h4{
+    padding-left: 10px;
+}
+.container1 img:hover{
+    cursor: pointer;
+}
+.container1 img:active {
+    transition: transform 0.3s ease;
+    transform: scale(0.8);
+}

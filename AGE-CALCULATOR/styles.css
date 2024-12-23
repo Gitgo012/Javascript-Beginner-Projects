@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(140deg, #4a0fab, #699ff7);
+}
+.container{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    padding-left: 125px;
+    justify-content: center;
+    flex-direction: column;
+}
+.calculator{
+    margin-top: 125px;
+    flex: 1;
+    height: auto;
+    width: auto;
+    font-size: 22px;
+    font-weight: 400px;
+    line-height: 55px;
+}
+.calculator h1:first-of-type{
+    color: white;
+}
+.calculator h1:nth-child(2){
+    color: rgb(251, 255, 97);
+    margin-bottom: 20px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 100px;
+    background-color: rgb(143, 123, 216);
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+.container2 input{
+    height: 50px;
+    width: 80%;
+    background-color: white;
+    border:none;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    font-size: 16px;
+
+}
+.container2 input::-webkit-calendar-picker-indicator {
+    background-size: 20px;
+    bottom: 0;
+    cursor: pointer;
+    left: 90%;
+    height: 100%;
+    width: 100%;
+    justify-self: flex-start;
+    right: 0;
+    position: absolute;
+    top: 12px;
+}
+
+.calculateBtn{
+    height: 50px;
+    border-radius: 5px;
+    width: 25%;
+    background-color: rgb(251, 252, 107);
+    font-size: 14px;
+    border: none;
+    margin-left: 25px;
+    color: black;
+}
+.calculateBtn:active{
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+    background-color: rgb(248, 248, 0);
+}
+.container2 input:active, .container2 input:focus{
+    outline: none;
+    border: none;
+}
+.ageText{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.year,.month,.day{
+    color: rgb(251, 252, 107);
+}
+.age{
+    color: rgb(251, 252, 107);
+}

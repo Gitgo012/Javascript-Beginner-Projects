@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #203277, #380a4e);
+}
+.container{
+    background: linear-gradient(135deg, #203277, #380a4e);
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    max-width: 470px;
+    border-radius: 20px;
+    background-color: white;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.container-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container-2 img{
+    height: 30px;
+    margin-left: 10px;
+}
+.searchbox{
+    width: 100%;
+    display: block;
+}
+.searchBox{
+    height: 40px;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+}
+.addBtn{
+    position: absolute;
+    border-radius: 30px;
+    height: 40px;
+    width: 25%;
+    background-color: #f77552;
+    border: none;
+    color: white;
+    left: 75%;
+}
+.addBtn:hover{
+    cursor: pointer;
+    background-color: #ff5945;
+}
+.searchbox{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 30px;
+}
+.searchBox:active, .searchBox:focus{
+    border: none;
+    outline: 3px solid #ff5945;
+}
+.tasks{
+    width: 100%;
+    padding: 20px 10px;
+}
+.tasks li{
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.tasks li::before{
+    content: "";
+    position: absolute;
+    width: 25px; 
+    height: 25px;
+    left: -35px;
+    border-radius: 70%; 
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+.tasks li.checked{
+    text-decoration: line-through;
+    color: #7c7c7c;
+}
+.tasks li.checked::before{
+    background-image: url(./images/checked.png);
+}
+.tasks span{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 100%;
+    color: #555;
+    text-align: center;
+}
+.tasks span:hover{
+    color: #ff5945;
+    cursor: pointer;
+    background: #edeef0;
+}
